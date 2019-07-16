@@ -1,9 +1,17 @@
 # Studying the MNIST dataset
 
-Shown below is a representative 28 x 28 image of one of the handwritten digits. 
+## Introduction
+
+The [MNIST dataset](http://yann.lecun.com/exdb/mnist/) contains 51,000 images of handwritten digits. These handwritten digits can be used to train various machine learning models to recognise digits. The MNIST dataset contains a further 10,000 digits that allow machine learning models to be tested.
+
+In this notebook, two neural networks will be constructed with the aim of recognising handwritten digits such as the one shown below.
 
 ![](./images/digit.png)
 
+The first neural network that will be created will be a fully connected neural network with five hidden layers. It will be found that with this architecture, the network is able to predict the digits with 96% accuracy.
+
+The second neural network that will be created will be a convolutional neural network (CNN). This model will have an alternating series of convolutional, max pooling and dropout layers. It will be seen that the CNN that is created in this notebook will have a 99% accuracy in predicting the digits in the test dataset.
+ 
 ## The First Model: Fully Connected
 
 The first model is a fully connected neural network that achieves an accuracy of 96% with the following architecture:
